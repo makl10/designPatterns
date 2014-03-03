@@ -31,9 +31,6 @@ public class VersionOneDriver
 		System.out.println(Arriba.getInstance().getGameCatalogue());
 	}
 	
-	/**
-	 * @param pDirectory load the whole game catalogue into the Arriba god class.
-	 */
 	public static void loadGameCatalogue(String pDirectory)
 	{
 		GameCatalogueLoader loader = new GameCatalogueFileLoader();

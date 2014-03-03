@@ -60,9 +60,6 @@ public class ArribaUI extends JFrame
 		}
 	}
 	
-	/**
-	 * Actually creates the various elements that are contained in the frame.
-	 */
 	private static void createGUI()
 	{
         JFrame.setDefaultLookAndFeelDecorated(true);

@@ -17,11 +17,6 @@ import arriba.Arriba;
 
 import com.google.gson.Gson;
 
-/**
- * @author Marc
- * This is a simple Version 1 Driver designed to test some of the early functionality that was implemented before the full GUI was up and running.
- *
- */
 public class VersionOneDriver 
 {
 	public static void main(String[] args) 
@@ -31,9 +26,6 @@ public class VersionOneDriver
 		System.out.println(Arriba.getInstance().getGameCatalogue());
 	}
 	
-	/**
-	 * @param pDirectory load the whole game catalogue into the Arriba god class.
-	 */
 	public static void loadGameCatalogue(String pDirectory)
 	{
 		GameCatalogueLoader loader = new GameCatalogueFileLoader();
