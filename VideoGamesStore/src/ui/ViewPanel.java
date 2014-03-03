@@ -1,0 +1,48 @@
+package ui;
+
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+
+import javax.swing.JComboBox;
+import javax.swing.JPanel;
+
+public class ViewPanel extends JPanel implements ItemListener
+{
+	private JPanel aCards;
+	
+	final static String GAMEFINDERPANEL = "Game Finder";
+	
+	public ViewPanel()
+	{
+		createViewPanel();
+	}
+	
+	public void createViewPanel()
+	{
+		this.setLayout(new BorderLayout());
+		
+		JPanel comboBoxPane = new JPanel();
+		String[] comboBoxItemns = { GAMEFINDERPANEL };
+		JComboBox cb = new JComboBox(comboBoxItemns);
+		cb.setEditable(false);
+		cb.addItemListener(this);
+		comboBoxPane.add(cb);
+		
+		final GameFinderPanel aGameFinderPanel = new GameFinderPanel();
+		
+		aCards = new JPanel(new CardLayout());
+		aCards.add(aGameFinderPanel, GAMEFINDERPANEL);
+		
+		add(comboBoxPane, BorderLayout.PAGE_START);
+		add(aCards, BorderLayout.CENTER);
+	}
+
+	@Override
+	public void itemStateChanged(ItemEvent pEvent)
+	{
+		CardLayout cl = (CardLayout) (aCards.getLayout());
+		cl.show(aCards, (String) pEvent.getItem());
+	}
+}

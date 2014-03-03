@@ -1,0 +1,30 @@
+package ui;
+
+import javax.swing.JFrame;
+
+import loaders.GameCatalogueFileLoader;
+import loaders.GameCatalogueLoader;
+
+public class ArribaUI extends JFrame
+{
+	
+	
+	/**
+	 * @param directory the location of the game files
+	 */
+	public void loadParliament(String directory)
+	{
+		GameCatalogueLoader loader = new GameCatalogueFileLoader();
+		
+	}
+	
+	public ArribaUI()
+	{
+        setTitle("Arriba");
+        setSize(1076, 750);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);   
+	}
+	
+	
+}

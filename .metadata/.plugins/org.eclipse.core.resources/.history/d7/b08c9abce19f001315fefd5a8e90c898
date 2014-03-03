@@ -1,0 +1,22 @@
+package ui;
+
+import javax.swing.JFrame;
+
+public class ArribaUI extends JFrame
+{
+	
+	public void loadParliament(String direcotry)
+	{
+		
+	}
+	
+	public ArribaUI()
+	{
+        setTitle("Arriba");
+        setSize(1076, 750);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);   
+	}
+	
+	
+}

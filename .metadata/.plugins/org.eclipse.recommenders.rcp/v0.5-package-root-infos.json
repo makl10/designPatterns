@@ -1,0 +1,288 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "be4124ecceb37230419f0f31ea6e7d50babb4973",
+    "jarFileModificationDate": "2014-01-20T03:16:14.424-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "35b1ff32138d818bd730f5df657163f3b1fc3d4d",
+    "jarFileModificationDate": "2014-01-20T03:16:14.321-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\ext\\dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7acf42fb63998f98ca2451e42ca6c283b98a3aeb",
+    "jarFileModificationDate": "2014-01-20T03:16:16.417-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\ext\\localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "555a764ca9b50ecb2ae715a94042da668c53e123",
+    "jarFileModificationDate": "2014-01-20T03:16:14.469-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.commons.lang3",
+    "version": {
+      "major": 3,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "905075e6c80f206bbe6cf1e809d2caa69f420c76",
+    "jarFileModificationDate": "2013-09-28T18:44:28-04:00",
+    "location": "C:\\Users\\Marc\\workspace\\designpatterns\\VideoGamesStore\\lib\\commons-lang3-3.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ba04f20d9486f44bb2895885d8944ca7a4b91118",
+    "jarFileModificationDate": "2014-01-20T03:16:16.390-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ca6baf9ad4c7f3fe2bdca3502cde1e43b6ea9a3a",
+    "jarFileModificationDate": "2014-01-20T03:16:14.386-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\ext\\zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "95dc9053062d68cde4e8c38494cc63aefd7b0a42",
+    "jarFileModificationDate": "2014-01-20T03:16:14.361-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\ext\\sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "447ba9a039506fc15af66978d30359c28b427e9f",
+    "jarFileModificationDate": "2014-01-20T03:16:16.148-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a60c339ebc91869355f261d7ff7d3c6b335aabb6",
+    "jarFileModificationDate": "2014-01-20T03:16:14.313-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\ext\\access-bridge-32.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b151e72980db486d2057e0e15fadd5133f574f3d",
+    "jarFileModificationDate": "2014-01-20T03:16:16.199-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0ac952099f5d1ba16ac9ca3b1284b2b959c2e082",
+    "jarFileModificationDate": "2014-01-20T03:16:14.429-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.google.gson",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 4,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "973e832af433b44c3ed11c426f2f390b29f3f3f8",
+    "jarFileModificationDate": "2013-09-28T18:44:26-04:00",
+    "location": "C:\\Users\\Marc\\workspace\\designpatterns\\VideoGamesStore\\lib\\google-gson-2.2.4\\gson-2.2.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1826204b0e05aef412b595321866f7d190e0498d",
+    "jarFileModificationDate": "2014-01-20T03:16:14.362-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\ext\\sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5e51ce82a095b4a23291b1cd35e6f1488efc5776",
+    "jarFileModificationDate": "2014-01-20T03:16:14.384-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\ext\\sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 17,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4f90475694c41965c9a0c8bac53ea5c690dea446",
+    "jarFileModificationDate": "2013-09-28T18:44:28-04:00",
+    "location": "C:\\Users\\Marc\\workspace\\designpatterns\\VideoGamesStore\\lib\\log4j-1.2.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.io",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cd8d6ffc833cc63c30d712a180f4663d8f55799b",
+    "jarFileModificationDate": "2013-09-28T18:44:28-04:00",
+    "location": "C:\\Users\\Marc\\workspace\\designpatterns\\VideoGamesStore\\lib\\commons-io-2.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.collections",
+    "version": {
+      "major": 3,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "761ea405b9b37ced573d2df0d1e3a4e0f9edc668",
+    "jarFileModificationDate": "2013-09-28T18:44:28-04:00",
+    "location": "C:\\Users\\Marc\\workspace\\designpatterns\\VideoGamesStore\\lib\\commons-collections-3.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a3d1a9689f1c8e36ab64fb669df92076771c42f2",
+    "jarFileModificationDate": "2014-01-20T03:16:14.383-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\ext\\sunmscapi.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.google.gson.source",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 4,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "10ab84ba225b583b10713f57c04270c918ef162b",
+    "jarFileModificationDate": "2013-09-28T18:44:26-04:00",
+    "location": "C:\\Users\\Marc\\workspace\\designpatterns\\VideoGamesStore\\lib\\google-gson-2.2.4\\gson-2.2.4-sources.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ec2e4e9fee7de31ac2426dc34ae8c76d6ab62e30",
+    "jarFileModificationDate": "2014-01-20T03:16:14.346-05:00",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\ext\\jaccess.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "gson-2.2.4-javadoc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "be47c2ee6e9ab0668874e4c6c4933c0637f473d8",
+    "jarFileModificationDate": "2013-09-28T18:44:26-04:00",
+    "location": "C:\\Users\\Marc\\workspace\\designpatterns\\VideoGamesStore\\lib\\google-gson-2.2.4\\gson-2.2.4-javadoc.jar",
+    "javaRuntime": false
+  }
+]

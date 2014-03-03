@@ -1,0 +1,104 @@
+package ui;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.io.File;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+
+public class ArribaUI extends JFrame
+{
+	static final int MINWIDTH = 450;
+	static final int MINHEIGHT = 300;
+	static final int PREFERREDWIDTH = 1076;
+	static final int PREFERREDHEIGHT = 750;
+	static final int MAXWIDTH = 450;
+	static final int MAXHEIGHT = 300;
+	
+	public static void main(String[] args) 
+	{
+		loadParliament("data/games/");
+		
+        SwingUtilities.invokeLater(new Runnable() 
+        {
+            @Override
+            public void run() 
+            {
+            	createGUI();
+            }
+        });
+	}
+	
+	private static void createGUI()
+	{
+        JFrame.setDefaultLookAndFeelDecorated(true);
+        ArribaUI frame = new ArribaUI();
+        frame.setVisible(true);
+        //When window is closing, these actions happen
+        frame.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent pWindowEvent)
+            {
+        		BinaryStrategy binaryStrat = new BinaryStrategy();
+        		binaryStrat.saveUserProfile();
+            }
+        });
+ 
+        frame.setContentPane(frame.createContentPane());
+        try
+        {
+        	JMenuBar bar = new MainMenuBar();
+            frame.setJMenuBar(bar);
+            ViewPanel panel = new ViewPanel();
+            frame.add(panel);
+            frame.pack();
+        }
+        catch(IOException e)
+        {
+        	//Do stuff
+        }
+	}
+	
+	/**
+	 * Creates the main content pane where the views and menu bar will live.
+	 * @return JPanel TotalGUI.
+	 */
+	
+	public JPanel createContentPane()
+	{
+        JPanel totalGUI = new JPanel();
+        totalGUI.setBackground(Color.white);
+        totalGUI.setMinimumSize(new Dimension(MINWIDTH, MINHEIGHT));
+        totalGUI.setPreferredSize(new Dimension(PREFERREDWIDTH, PREFERREDHEIGHT));
+        totalGUI.setMaximumSize(new Dimension(MAXWIDTH, MAXHEIGHT));
+        totalGUI.setOpaque(true);
+        return totalGUI;
+	}
+	
+	/**
+	 * @param directory the location of the game files
+	 */
+	public static void loadParliament(String pDirectory)
+	{
+		File dir = new File(pDirectory);
+		String[] gameList = dir.list();
+		
+		for(String name : gameList)
+		{
+			String newPath = pDirectory + name;
+
+		}
+	}
+	
+	public ArribaUI()
+	{
+        setTitle("Arriba");
+        setSize(1076, 750);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);   
+	}
+	
+	
+}

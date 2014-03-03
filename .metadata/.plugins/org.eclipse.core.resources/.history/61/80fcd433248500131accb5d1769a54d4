@@ -1,0 +1,79 @@
+package driver;
+
+import game.Game;
+import game.JGame;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+import com.google.gson.Gson;
+
+public class VersionOneDriver 
+{
+	public static void main(String[] args) 
+	{
+		
+		ArrayList<Game> games = new ArrayList<Game>();
+//		JGame gson;
+		String path = "data/games/";
+//		if(! new File(path).exists())
+//		{
+//			System.out.println("Shit");
+//		}
+//		else
+//		{
+//			InputStreamReader json = new InputStreamReader(getInputStream(path));
+//			gson = new Gson().fromJson(json, JGame.class);
+//			System.out.println(gson.toString());
+//		}
+	
+		File dir = new File(path);
+		String[] gameList = dir.list();
+		
+		for(String game : gameList)
+		{
+//			System.out.println(path + game);
+			
+			String newPath = path + game;
+			
+			if(! new File(newPath).exists())
+			{
+				System.out.println("Shit");
+			}
+			
+			else
+			{
+				InputStreamReader json = new InputStreamReader(getInputStream(newPath));
+				JGame gson = new Gson().fromJson(json, JGame.class);
+				int foo = Integer.parseInt(gson.getMetascore());
+				Game myGame = new Game(gson.getName(), gson.getCategory(), gson.getGenre(), foo);
+				games.add(myGame);
+				System.out.println(myGame.toString());
+			}
+			
+		}
+		
+//		System.out.println(games);
+		
+	}
+	
+	/*
+	 * Return a FileInputStream for the given path
+	 */
+	private static InputStream getInputStream(String pFilePath)
+	{
+		try 
+		{
+			File file = new File(pFilePath);
+			return new FileInputStream(file);
+		}
+		catch (FileNotFoundException e) 
+		{
+			return null;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+package ui;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collection;
+
+import javax.swing.JFrame;
+
+import loaders.GameCatalogueFileLoader;
+import loaders.GameCatalogueLoader;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.DirectoryFileFilter;
+import org.apache.commons.io.filefilter.WildcardFileFilter;
+
+public class ArribaUI extends JFrame
+{
+	
+	
+	/**
+	 * @param directory the location of the game files
+	 */
+	public void loadParliament(String pDirectory)
+	{
+		GameCatalogueLoader loader = new GameCatalogueFileLoader();
+		ArrayList<String> gameLocations = 
+						
+			Collection<File> files = FileUtils.listFiles(new File(pDirectory),
+					new WildcardFileFilter("*.json"), 
+					DirectoryFileFilter.DIRECTORY
+			);
+	}
+	
+	public ArribaUI()
+	{
+        setTitle("Arriba");
+        setSize(1076, 750);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);   
+	}
+	
+	
+}

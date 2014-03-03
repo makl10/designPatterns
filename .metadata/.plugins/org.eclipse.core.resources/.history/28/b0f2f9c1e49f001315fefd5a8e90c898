@@ -1,0 +1,96 @@
+package ui;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.io.File;
+import java.io.IOException;
+
+import javax.swing.JFrame;
+import javax.swing.JMenuBar;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+
+import loaders.GameCatalogueFileLoader;
+
+public class ArribaUI extends JFrame
+{
+	static final int MINWIDTH = 450;
+	static final int MINHEIGHT = 300;
+	static final int PREFERREDWIDTH = 1076;
+	static final int PREFERREDHEIGHT = 750;
+	static final int MAXWIDTH = 450;
+	static final int MAXHEIGHT = 300;
+	
+	public static void main(String[] args) 
+	{
+		loadParliament("data/games/");
+		
+        SwingUtilities.invokeLater(new Runnable() 
+        {
+            @Override
+            public void run() 
+            {
+            	createGUI();
+            }
+        });
+	}
+	
+	/**
+	 * @param directory the location of the game files
+	 */
+	public static void loadParliament(String pDirectory)
+	{
+		GameCatalogueLoader loader = new GameCatalogueFileLoader();
+		File dir = new File(pDirectory);
+		String[] gameList = dir.list();
+		
+		for(String name : gameList)
+		{
+			String newPath = pDirectory + name;
+
+		}
+	}
+	
+	private static void createGUI()
+	{
+        JFrame.setDefaultLookAndFeelDecorated(true);
+        ArribaUI frame = new ArribaUI();
+        frame.setVisible(true);
+
+ 
+        frame.setContentPane(frame.createContentPane());
+        
+    	JMenuBar bar = new JMenuBar();
+        frame.setJMenuBar(bar);
+        ViewPanel panel = new ViewPanel();
+        frame.add(panel);
+        frame.pack();
+    
+	}
+	
+	/**
+	 * Creates the main content pane where the views and menu bar will live.
+	 * @return JPanel TotalGUI.
+	 */
+	
+	public JPanel createContentPane()
+	{
+        JPanel totalGUI = new JPanel();
+        totalGUI.setBackground(Color.white);
+        totalGUI.setMinimumSize(new Dimension(MINWIDTH, MINHEIGHT));
+        totalGUI.setPreferredSize(new Dimension(PREFERREDWIDTH, PREFERREDHEIGHT));
+        totalGUI.setMaximumSize(new Dimension(MAXWIDTH, MAXHEIGHT));
+        totalGUI.setOpaque(true);
+        return totalGUI;
+	}
+		
+	public ArribaUI()
+	{
+        setTitle("Arriba");
+        setSize(1076, 750);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);   
+	}
+	
+	
+}
