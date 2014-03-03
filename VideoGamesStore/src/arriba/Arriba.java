@@ -1,5 +1,10 @@
 package arriba;
 
+/**
+ * @author Marc
+ * The singleton in this design, can be accessed from all other classes in the design. Keeps track of the game catalogue.
+ *
+ */
 public final class Arriba 
 {
 	private static final Arriba INSTANCE = new Arriba();

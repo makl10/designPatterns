@@ -43,10 +43,8 @@ public class ViewPanel extends JPanel implements ItemListener
 		cb.addItemListener(this);
 		comboBoxPane.add(cb);
 		
-//		The Game finder panel.
 		final GameFinderPanel aGameFinderPanel = new GameFinderPanel();
 		
-//		Initiates the cards and adds the various panels.
 		aCards = new JPanel(new CardLayout());
 		aCards.add(aGameFinderPanel, GAMEFINDERPANEL);
 		

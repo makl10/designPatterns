@@ -46,7 +46,7 @@ public class ViewPanel extends JPanel implements ItemListener
 //		The Game finder panel.
 		final GameFinderPanel aGameFinderPanel = new GameFinderPanel();
 		
-//		Initiates the cards and adds the various panels.
+//		Initiates the cards and adds the various panels
 		aCards = new JPanel(new CardLayout());
 		aCards.add(aGameFinderPanel, GAMEFINDERPANEL);
 		

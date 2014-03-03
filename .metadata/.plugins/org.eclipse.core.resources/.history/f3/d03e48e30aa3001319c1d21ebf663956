@@ -43,7 +43,7 @@ public class Game
 	}
 	
 	/**
-	 * @return pGenre the genre of the game
+	 * @return
 	 */
 	public String getGenre()
 	{
@@ -51,7 +51,7 @@ public class Game
 	}
 	
 	/**
-	 * @return pMetascore the metascore of the game
+	 * @return
 	 */
 	public int getMetascore()
 	{

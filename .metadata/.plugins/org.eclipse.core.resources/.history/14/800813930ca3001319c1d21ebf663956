@@ -15,19 +15,11 @@ import javax.swing.event.ListSelectionListener;
 import arriba.Arriba;
 import arriba.GameCatalogue;
 
-/**
- * @author Marc
- * This the panel that sorts through games and displays them in a table format.
- *
- */
 public class GameFinderPanel extends JPanel implements ListSelectionListener
 {
 	private JTable aTable;
 	private final GameFinderTableModel aModel;
 	
-	/**
-	 * Constructor which initiliases all the various functionality of the panel.
-	 */
 	public GameFinderPanel()
 	{
 		super();

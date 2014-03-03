@@ -10,7 +10,7 @@ public class GameFinderTableModel extends AbstractTableModel
 {
 	private String[] aColumnNames = { "Name", "Genre", "MetaScore" };
 	
-	private Vector[] aData = { new Vector<String>(), new Vector<String>(), new Vector<Integer>() };
+	private Vector<String>[] aData = { new Vector<String>(), new Vector<String>(), new Vector<Integer>() };
 
 	@Override
 	public int getRowCount() 

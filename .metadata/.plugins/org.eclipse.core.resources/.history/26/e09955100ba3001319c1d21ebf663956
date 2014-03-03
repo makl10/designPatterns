@@ -7,8 +7,7 @@ import java.util.Iterator;
 
 /**
  * @author Marc
- * Keeps track of all the games in a HashMap object.
- * Uses the iterator design pattern
+ * Keeps track of all the games
  *
  */
 public final class GameCatalogue implements Iterable<Game>

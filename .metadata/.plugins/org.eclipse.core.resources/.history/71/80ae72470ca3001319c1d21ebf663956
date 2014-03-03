@@ -32,10 +32,8 @@ public class ViewPanel extends JPanel implements ItemListener
 	 */
 	public void createViewPanel()
 	{
-//		Set the layout
 		this.setLayout(new BorderLayout());
 		
-//		Create the comboBox and the various items associated with it.
 		JPanel comboBoxPane = new JPanel();
 		String[] comboBoxItemns = { GAMEFINDERPANEL };
 		JComboBox cb = new JComboBox(comboBoxItemns);
@@ -43,10 +41,8 @@ public class ViewPanel extends JPanel implements ItemListener
 		cb.addItemListener(this);
 		comboBoxPane.add(cb);
 		
-//		The Game finder panel.
 		final GameFinderPanel aGameFinderPanel = new GameFinderPanel();
 		
-//		Initiates the cards and adds the various panels.
 		aCards = new JPanel(new CardLayout());
 		aCards.add(aGameFinderPanel, GAMEFINDERPANEL);
 		

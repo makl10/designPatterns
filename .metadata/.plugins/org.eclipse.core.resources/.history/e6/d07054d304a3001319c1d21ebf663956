@@ -16,7 +16,7 @@ import com.google.gson.Gson;
 
 /**
  * @author Marc
- *  This loads a bunch of Json files from a given directory. Then adds each of these game into the GameCatalogue.
+ * 
  *
  */
 public class GameCatalogueFileLoader implements GameCatalogueLoader
