@@ -84,6 +84,7 @@ public class ArribaUI extends JFrame
 	 * Creates the main content pane where the views and menu bar will live.
 	 * @return JPanel TotalGUI.
 	 */
+	
 	public JPanel createContentPane()
 	{
         JPanel totalGUI = new JPanel();
